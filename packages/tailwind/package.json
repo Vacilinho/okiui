@@ -1,0 +1,23 @@
+{
+  "name": "@oki-ui/tailwind",
+  "version": "0.1.0",
+  "description": "Tailwind v4 theme integration for okiui design system",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./theme.css": "./dist/theme.css"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "node scripts/generate-theme.mjs",
+    "dev": "node --watch scripts/generate-theme.mjs"
+  },
+  "keywords": ["design-system", "tailwind", "tailwindcss", "okiui"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@oki-ui/tokens": "workspace:*"
+  }
+}

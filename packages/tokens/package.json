@@ -1,0 +1,36 @@
+{
+  "name": "@oki-ui/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for the okiui design system",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./dist/css/tokens.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && node scripts/generate-css.mjs",
+    "dev": "tsup --watch"
+  },
+  "keywords": [
+    "design-system",
+    "tokens",
+    "react",
+    "tailwind"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
+}

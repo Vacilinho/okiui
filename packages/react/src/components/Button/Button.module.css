@@ -1,0 +1,50 @@
+.button {
+  /* Usa as CSS variables do @okiui/tokens */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--oki-spacing-2);
+  border: none;
+  cursor: pointer;
+  font-family: var(--oki-font-body);
+  font-weight: var(--oki-weight-semibold);
+  border-radius: var(--oki-radius-md);
+  transition: all 150ms ease;
+}
+
+/* Tamanhos */
+.sm { padding: var(--oki-spacing-1) var(--oki-spacing-3); font-size: var(--oki-text-sm); }
+.md { padding: var(--oki-spacing-2) var(--oki-spacing-5); font-size: var(--oki-text-base); }
+.lg { padding: var(--oki-spacing-3) var(--oki-spacing-7); font-size: var(--oki-text-lg); }
+
+/* Variantes */
+.primary {
+  background: var(--oki-color-primary-600);
+  color: var(--oki-color-white);
+}
+.primary:hover { background: var(--oki-color-primary-700); }
+.primary:active { background: var(--oki-color-primary-800); }
+
+.secondary {
+  background: var(--oki-color-gray-800);
+  color: var(--oki-color-gray-100);
+}
+.secondary:hover { background: var(--oki-color-gray-700); }
+
+.ghost {
+  background: transparent;
+  color: var(--oki-color-primary-400);
+}
+.ghost:hover { background: var(--oki-color-primary-950); }
+
+.danger {
+  background: var(--oki-color-error);
+  color: var(--oki-color-white);
+}
+.danger:hover { filter: brightness(0.9); }
+
+/* Estado desabilitado */
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
