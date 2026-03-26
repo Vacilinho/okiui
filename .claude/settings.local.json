@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm:*)",
+      "Bash(find /c/MyProjects/okiui/packages/react -type f ! -path */node_modules/*)"
+    ]
+  }
+}

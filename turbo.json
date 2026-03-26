@@ -10,6 +10,17 @@
       "persistent": true
     },
     "lint": {},
-    "test": {}
+    "test": {},
+
+    "@oki-ui/storybook#dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+
+    "@oki-ui/storybook#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["apps/storybook/dist/**"]
+    }
   }
 }

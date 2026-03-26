@@ -1,11 +1,12 @@
 # okiui
+
 Design System for React
 
 ## Packages
 
-| Package | Description | Version |
-|---------|-------------|---------|
-| `@okiui/tokens` | Design tokens (colors, typography, spacing) | 0.1.0 |
+| Package         | Description                                 | Version |
+| --------------- | ------------------------------------------- | ------- |
+| `@okiui/tokens` | Design tokens (colors, typography, spacing) | 0.1.0   |
 
 ## Quick Start
 

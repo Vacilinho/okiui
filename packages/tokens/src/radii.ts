@@ -1,12 +1,12 @@
 export const radii = {
-  none:  '0px',
-  sm:    '4px',
-  base:  '8px',
-  md:    '12px',
-  lg:    '16px',
-  xl:    '20px',
+  none: '0px',
+  sm: '4px',
+  base: '8px',
+  md: '12px',
+  lg: '16px',
+  xl: '20px',
   '2xl': '24px',
-  full:  '9999px',
+  full: '9999px',
 } as const
 
 export type Radii = typeof radii

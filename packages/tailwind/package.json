@@ -7,12 +7,20 @@
     ".": "./dist/index.js",
     "./theme.css": "./dist/theme.css"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "node scripts/generate-theme.mjs",
-    "dev": "node --watch scripts/generate-theme.mjs"
+    "dev": "node --watch scripts/generate-theme.mjs",
+    "lint": "echo \"No lint for tailwind package\""
   },
-  "keywords": ["design-system", "tailwind", "tailwindcss", "okiui"],
+  "keywords": [
+    "design-system",
+    "tailwind",
+    "tailwindcss",
+    "okiui"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"

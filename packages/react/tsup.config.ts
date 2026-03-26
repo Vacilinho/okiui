@@ -7,8 +7,8 @@ export default defineConfig({
   clean: true,
   sourcemap: true,
   external: ['react', 'react-dom'],
-  injectStyle: false,        // CSS Modules vão gerar um styles.css separado
+  injectStyle: false, // CSS Modules vão gerar um styles.css separado
   loader: {
-    '.css': 'local-css',     // habilita CSS Modules
+    '.css': 'local-css', // habilita CSS Modules
   },
 })

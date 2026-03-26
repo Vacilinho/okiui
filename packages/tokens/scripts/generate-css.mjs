@@ -3,7 +3,6 @@ import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { pathToFileURL } from 'url'
 
-
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // Importar tokens do build
@@ -24,7 +23,10 @@ function flattenObject(obj, prefix = '') {
 }
 
 function toCSSVarName(str) {
-  return `--oki-${str.replace(/\./g, '-').replace(/([A-Z])/g, '-$1').toLowerCase()}`
+  return `--oki-${str
+    .replace(/\./g, '-')
+    .replace(/([A-Z])/g, '-$1')
+    .toLowerCase()}`
 }
 
 function generateCSS() {
@@ -32,12 +34,12 @@ function generateCSS() {
   css += ':root {\n'
 
   const sections = {
-    colors: tokens.colors,
+    color: tokens.colors,
     spacing: tokens.spacing,
-    radii: tokens.radii,
-    shadows: tokens.shadows,
+    radius: tokens.radii,
+    shadow: tokens.shadows,
     motion: tokens.motion,
-    breakpoints: tokens.breakpoints,
+    breakpoint: tokens.breakpoints,
   }
 
   // Typography
